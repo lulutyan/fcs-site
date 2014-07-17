@@ -1,0 +1,718 @@
+@font-face {
+  font-family: Sansation;
+  src: url("../fonts/Sansation_Regular.ttf");
+}
+@font-face {
+  font-family: Sansation;
+  src: url("../fonts/Sansation_Bold.ttf");
+  font-weight: bold;
+}
+body{
+	font-family: Sansation, sans-serif;
+	font-size: 14px;
+}
+::selection { /* цвет выделения!!!!!*/
+	background: #ffb7b7; 
+}
+
+h2{
+	font-size: 40px;
+	font-weight: normal;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+h3{
+	font-size: 26px;
+	margin: 15px 0px;
+	padding: 0px;
+}
+.blue-text{
+	color: #2daef1;
+}
+
+.black{
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+.black:hover{
+	color: #000;
+	text-decoration: underline;
+}
+.gray{
+	color: #4b4b4b;
+	text-decoration: none;
+}
+.gray:hover{
+	color: #4b4b4b;
+	text-decoration: underline;
+}
+.text-bold{
+	font-weight: bold;
+}
+.blue{
+	color: #2daef1;
+	text-decoration: none;
+}
+.blue:hover{
+	text-decoration: underline;
+	color: #2daef1 ;
+}
+/* blue color #2daef1     */
+/*-----------------------------------------------------------------------------------*/
+
+/*--------------------HEADER---------------------------------------*/
+
+.container-fluid{
+	max-width: 1000px;
+}
+.header{
+	background-color: #f3f3f3;
+	border-bottom: 2px solid #2daef1;
+	padding-top: 20px;
+	padding-bottom: 10px; 
+	margin-bottom: 40px;
+}
+.top{
+	clear: both;
+	margin-bottom: 30px;
+}
+
+.omsu{
+	float: left;
+}
+.lang{
+	color: gray;
+	float: right;
+}
+.lang .active{
+	font-weight: bold;
+	color: #2daef1;
+}
+.logo{
+	font-size: 25px;
+	padding-left: 175px;
+	background: url("../images/logo.png") no-repeat left top;
+	height: 180px;
+	padding-top: 40px;
+	margin-top: 25px;
+	cursor: pointer;
+}
+.logo-div{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.contacts-div{
+	background-color: #fbfbfb;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    padding: 20px 15px 10px;
+    border: 1px solid #2daef1;
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 32%;
+}
+
+.contacts-div .address{
+	padding-left: 40px;
+	background: url("../images/contacts_address.png") no-repeat left;
+}
+.contacts-div .phone{
+	font-weight: bold;
+	padding-left: 40px;
+	background: url("../images/contacts_phone.png") no-repeat left;
+}
+/*-----------------------------------------------------------------------------------*/
+/*--------------------FOOTER---------------------------------------*/
+.footer{
+	margin-top: 40px;
+	padding: 30px 0;
+	background-color: #f3f3f3;
+	border-top: 2px solid #2daef1;
+}
+.footer-menu{
+	font-size: 16px;
+	display: inline-block;
+	clear: both;
+
+}
+.footer-menu-item{
+	vertical-align: top;
+	float: left;
+	margin-top: 10px;
+}
+.footer-menu-item ul li{
+	list-style-type: none;
+	font-size: 13px;
+	line-height: 13px;
+	margin-top: 13px;
+}
+
+.contacts-footer-item{
+	float: right;
+	margin-left: 20px;
+}
+.footer-logo{
+	float: right;
+}
+/*-----------------------------------------------------------------------------------*/
+/*--------------------MENU---------------------------------------*/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+
+.menu{
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.menu-item{
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.navbar-default{
+	background: transparent;
+	border: none; 
+}
+.navbar-default .navbar-nav > li > a{
+	color: #000;
+	padding: 10px 43px;
+}
+.navbar-default .navbar-nav > li > a:hover
+{
+	color: #fff;
+	background-color: #2daef1;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+.active-menu{
+	color: #fff;
+	background-color: #2daef1;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+	color: #fff;
+	background-color: #2daef1;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+}
+
+.menu-item ul{
+	text-transform: none;
+}
+.dropdown-menu{
+	width: 92%;
+	margin-left: 8px;
+}
+.dropdown-menu li a{
+	margin-bottom: 8px;
+	padding: 3px 12px;
+}
+.dropdown-menu li a:hover{
+	background-color: transparent;
+	text-decoration: underline;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	padding: 0px;
+}
+.doc{
+	background: url("../images/doc.png") no-repeat right;
+	margin-right: 20px;
+
+}
+/*-----------------------------------------------------------------------------------*/
+/*--------------------CONTENT---------------------------------------*/
+.pageheader-description, .person-description{
+	font-size: 18px;
+	color: #777777;
+	margin-bottom: 20px;
+}
+.pageheader-description .address{
+	margin-top: 15px;
+}
+.content{
+	min-height: 300px;
+}
+.modal-dialog{
+	width: 700px;
+}
+
+/* ксюша молодец. ксюшин костыль :)  */
+.modal-open{
+	margin-right: 15px;
+}
+.modal{
+	overflow-y: auto; 	
+}
+.simple-text{
+	font-size: 18px;
+	color: #000;
+}
+/*-----------------------------------------------------------------------------------*/
+/*--------------------INDEX---------------------------------------*/
+.index-abit{
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    background-color: #f3f3f3;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+}
+.index-abit:hover{
+	background-color: #e9e9e9;
+}
+.rubric{
+	font-size: 20px;
+}
+.abit-descript{
+	margin-top: 10px;
+	line-height: 16px;
+	padding-left: 5px;
+}
+.abit-header {
+	background: url("../images/abit.png") no-repeat left;
+	padding-left: 40px;
+}
+.materials-header{
+	background: url("../images/matherials.png") no-repeat left;
+	padding-left: 40px;
+}
+.index-materials{
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    
+}
+.index-materials:hover{
+	background-color: #f3f3f3;
+}
+.index-timetable{
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    padding: 10px;
+    margin-top: 20px;
+}
+.timetable-header{
+	background: url("../images/timetable.png") no-repeat left;
+	padding-left: 40px;
+}
+.index-timetable ul{
+	padding-top: 10px;
+	padding-left: 5px;
+}
+.index-timetable ul li{
+	 list-style: none;
+	 padding-left: 16px;
+	 background: url("../images/list-item.png") no-repeat left;
+	 line-height: 26px;
+}
+.index-museum{
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+	background-color: #f3f3f3;
+	padding: 10px 28px;
+	margin: 30px 0px;
+}
+.museum-text{
+	background: url("../images/museum.png") no-repeat right;
+	padding-right: 145px;
+}
+.welcome{
+	font-size: 16px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*--------------------TIMETABLE---------------------------------------*/
+.timetable-preview{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+}
+.timetable-fullview{
+	width: 100%;
+	height: auto;
+}
+.timetable-modal{
+	padding: 0px;
+
+}
+.modal-footer{
+	margin-top: 0px;
+}
+.timetable-item{
+	font-size: 18px;
+}
+.timetable-row{
+	padding-top: 20px;
+}
+.timetable-zao, .timetable-spec{
+	margin: 30px 0px;
+	font-size: 18px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*--------------------EXAM---------------------------------------*/
+
+.exam th{
+	color: #6b6767;
+	font-weight: normal;
+}
+.exam td{
+	font-size: 17px;
+	padding: 20px 0;
+}
+.specialty-name{
+	font-weight: bold;
+	padding-left: 30px;
+	background: url("../images/d.png") left center no-repeat;
+	margin-left: 10px;
+}
+.more-spec{
+	padding-left: 60px;
+	line-height: 25px;
+	margin-left: 10px;
+}
+.exam-list{
+	line-height: 30px;
+}
+.exam{
+	margin-top: 23px;
+}
+.exam thead tr th{
+	border: none;
+}
+.exam tbody tr td{
+	padding: 20px 0px;
+	border: none; 
+}
+
+.group{
+	padding-left: 35px; 
+}
+
+/*--------------------FAST-FORM & UNIX ---------------------------------------*/
+.small-descr{
+	font-size: 14px;
+}
+.fast-form, .unix, .aspir{
+	font-size: 18px;
+}
+.more-spec{
+	margin-bottom: 40px;
+}
+.staff-name{
+	padding-left: 30px;
+}
+.position{
+	margin-top: 30px;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+.staff{
+	margin: 50px 0; 
+}
+.unix{
+	padding: 20px 0;
+}
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- MATHERIALS ---------------------------------------*/
+.matherials-all, .units, .international, .deanery{
+	margin-top: 30px;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.matherials-all ul li, .units ul li, .deanery ul li, .person-list li, .conference-list li{
+	list-style: none;
+	padding-left: 30px;
+	background: url("../images/d.png") left no-repeat;
+	padding-bottom: 15px;
+	background-position-y: 10px;
+}
+.matherials-all ul,.units ul, .deanery ul, .person-list, .conference-list{
+	padding-left: 15px;
+}	
+.matherials-all ul li a{
+	font-size: 18px;
+	color: #2daef1;
+}
+.all{
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+.matherials-list{
+	padding-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.matherials-list li{
+	list-style: none;
+
+}
+.matherials-list li a{
+	list-style: none;
+
+}
+.matherials-list .pdf{
+	background: url("../images/pdf.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-list .html{
+	background: url("../images/html.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-list .doc{
+	background: url("../images/doc.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-list .xls{
+	background: url("../images/xls.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-list .rtf{
+	background: url("../images/rtf.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-list .zip{
+	background: url("../images/zip.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-list .link{
+	background: url("../images/link.png") left no-repeat;
+	padding-left: 55px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.matherials-graphic{
+	margin-top: 10px;
+}
+
+.matherials-graphic table{
+	font-size: 14px;
+}
+.control{
+	margin-bottom: 25px;
+	font-size: 22px;
+}
+
+.aspir .matherials-list{
+	margin-left: 25px;
+	font-size: 16px;
+}
+.aspir-passport{
+	margin-top: 30px;
+}
+.international-item .first{
+	padding-top: 20px;
+}
+.international-item{
+	margin: 20px 0px;
+}
+.international .group{
+	margin-top: 40px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- PERSONS ---------------------------------------*/
+
+.person-list{
+	margin: 20px 0px;
+}
+.person-list ul li{
+	padding-bottom: 15px;
+}
+.person-matherils, .person-publications{
+	margin-top: 30px;
+}
+.person-matherils-list{
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+.person-matherils-list li {
+	padding-bottom: 0px;
+	padding-top: 2px;
+}
+.sub-list{
+	margin: 10px 0px 20px;
+	font-size: 16px;
+}
+.person-photo img{
+	width: 100%;
+}
+.sub-list li{
+	padding-bottom: 0px;
+	padding-top: 2px;
+	line-height: 18px;
+}
+.person-contacts{
+	margin-bottom: 15px;
+}
+.descript{
+	color: #777777;
+	font-size: 15px;
+}
+.personal-info{
+	margin-top: 40px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- FACULTY ---------------------------------------*/
+.faculty{
+	margin-top: 30px;
+	font-size: 18px;
+	margin-bottom: 40px;
+}
+.faculty ul li{
+	list-style: none;
+	padding-left: 30px;
+	background: url("../images/d.png") left no-repeat;
+	background-position-y: 12px;
+	line-height: 30px;
+}
+.lab-photo img{
+	width: 100%;
+	margin-top: 30px;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+}
+.lab-photo-left img{
+	width: 100%;
+	padding: 15px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- STUDENTS ---------------------------------------*/
+.students{
+	font-size: 18px;
+	margin: 30px 0px;
+}
+.conf{
+	margin-top: 40px;
+}
+
+.week-photos{
+	display: inline;
+}
+.week-photos img{
+	float: left;
+    margin-right: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.week-photos .last{
+	margin-right: 0px;
+}
+.photoex-list{
+	margin: 30px 0px;
+	padding-left: 0px;
+}
+
+.photo-albums .album img{
+	width: 100%;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    margin-bottom: 20px;
+}
+.album{
+	margin-bottom: 50px;
+} 
+.conference-list li{
+	padding-bottom: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- GALLERY ---------------------------------------*/
+.gallery{
+	font-size: 18px;
+	margin: 30px 0px;
+}
+.thumbnails{
+	width: 19%;
+	margin-bottom: 5px;
+	-webkit-border-radius: 10px; 
+    -moz-border-radius: 10px;
+         border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border: 1px solid #c3c3c3;
+}
+
+.btn-default img{
+	height: 20px;
+	width: auto;
+	margin: 5px;
+}
+
+.btn-gallery{
+	padding: 0px 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*-------------------- CONTACTS ---------------------------------------*/
+.contacts{
+	font-size: 18px;
+	margin: 40px 0px;
+}
+.contact-item{
+	margin-top: 30px;
+}
+
+.contacts-map{
+	margin-top: 30px;
+	width: 100%;
+	height: 500px;
+}
+.page-link{
+	text-decoration: none;
+	color: #000;
+	border-bottom: 2px dashed #2daef1;
+}
+.page-link:hover{
+	text-decoration: none;
+	color: #000;
+}
